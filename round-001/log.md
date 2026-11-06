@@ -20,5 +20,3 @@
 - I'm starting to enjoy building desktop apps. I can see myself doing native builds in the future, especially in Go, and maybe Rust. Who knows where this goes.
 
 **Code:** Private work repo (`geomatics-toolkits`)
-
----
