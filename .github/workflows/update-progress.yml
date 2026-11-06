@@ -1,0 +1,32 @@
+name: Update progress tracker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "round-*/log.md"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v7
+
+      - name: Update the progress tracker
+        run: python3 scripts/update_progress.py
+
+      - name: Commit and push the README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add round-*/README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "docs: update README progress tracker"
+          git push
