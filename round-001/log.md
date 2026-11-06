@@ -12,6 +12,8 @@
 - Added a startup check that stops and shows the `pip` install command if `openpyxl` or `xlrd` is missing.
 - Set up the private `geomatics-toolkits` repo with a README for the pile report tool and the project structure builder.
 
+**NOTE:** Also added a GitHub workflow to automatically update the progress tracker in the round-001/README.md
+
 ### **Lessons:**
 
 - Working through the problem with AI helped. It caught edge cases I hadn't thought of, like the encoding difference between a standard CSV and one saved by Excel on Windows.
