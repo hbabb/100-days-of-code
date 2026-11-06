@@ -127,13 +127,11 @@ Not every day needs to produce a finished feature or a Git commit. Meaningful pr
 ## Progress Tracker
 
 <!-- progress:start -->
-
 <text color="secondary">1 / 100 Days Completed</text>
 
 ```text
 ░░░░░░░░░░░░░░░░░░░░ 1%
 ```
-
 <!-- progress:end -->
 
 Progress will be updated throughout the challenge.
